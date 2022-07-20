@@ -15,11 +15,7 @@ jobs:
           distribution: 'adopt'
       - name: Build with Gradle
         run: ./gradlew build
-      - name: Upload jarfiles
-        uses: actions/upload-artifact@v3
-        with:
-          path: build/libs/*.jar
       - uses: actions/upload-artifact@v3
         with:
-          name: artifact
-          path: build/libs/*.jar # or path/to/artifact
+          name: AdvancedSlimeWorldManager-Plugin
+          path: slimeworldmanager-plugin/build/libs/*.jar
