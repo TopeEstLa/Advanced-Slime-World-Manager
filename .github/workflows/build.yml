@@ -1,4 +1,4 @@
-name: CI
+name: Build-Plugin
 on: [push]
 permissions: read-all
 jobs:
